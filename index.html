@@ -1,0 +1,54 @@
+<!---
+Name: Jaden Moler
+Date created: 10/14/19
+Last revised: 10/16/19
+--->
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Lucky Sevens</title>
+        <link href = "styles/luckySevenStyles.css" type = "text/css" rel = "stylesheet">
+         <script type = "text/JavaScript" src = "scripts/luckySevenScripts.js"></script>
+    </head>
+    
+    <body>
+        <h1>Lucky Sevens</h1>
+        <form name = startingBet>
+            <label for = "startingBet" style = "text-align: center">Starting Bet:</label>
+            <input type = "number" id= "Bet" class = "startingBet" step = "0.01" placeholder = "$0.00"/>
+        </form>
+        
+        <form>
+            <input type = "button" id = "play" value = "Play" onClick = "startGame()">
+        </form>
+        
+        <p id = "errorBet">Please enter a number greater than 0.</p>
+        
+        <div id = "results" style = "display: none">
+        <hr width = "50%" />
+        <h1>Results</h1>
+        
+        <table>
+            <tr>
+                <td>Starting Bet</td>
+                <td id = "startingBet"></td>
+            </tr>
+            <tr>
+                <td>Total Rolls Before Going Broke</td>
+                <td id = "totalRolls"></td>
+            </tr>
+            <tr>
+                <td>Highest Amount Won</td>
+                <td id = "mostMoney"></td>
+            </tr>
+            <tr>
+                <td>Roll Count at Highest Amount Won</td>
+                <td id = "rollAtMostMoney"></td>
+            </tr>
+        </table>
+        </div>
+        
+    </body>
+</html>

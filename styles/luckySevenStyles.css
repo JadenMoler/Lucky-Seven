@@ -1,0 +1,43 @@
+/*
+Name: Jaden Moler
+Date created: 10/15/19
+Last revised: 10/16/19
+*/
+
+#startingBet
+{
+    width: 100px;
+}
+
+form, h1, button
+{
+    text-align: center;
+}
+
+form
+{
+    margin-bottom: 30px;
+}
+
+table, tr, td
+{
+    border: 1px solid black;
+    border-collapse: collapse;
+    
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#id
+{
+    width: 400px;
+    height: 125px;
+}
+
+#errorBet
+{
+    display: none;
+    text-align: center;
+    color: red;
+}
